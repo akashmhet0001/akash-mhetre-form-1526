@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+  }
+  
+  .contactform {
+    margin-bottom: 20px;
+  }
+  
+  form fieldset {
+    max-width: 50rem;
+    width: 100%;
+    padding: 20px;
+    background-color: #F5F5F5; 
+    border: 2px solid #DDDDDD; 
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 10, 0.2); 
+  }
+  
+  form legend {
+    font-size: 2rem; 
+    margin: 16px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 2px solid #DDDDDD; 
+    background-color: white; 
+  }
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #b8b7b7;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.8); 
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgba(0, 0, 255, 1); 
+    box-shadow: 0 0 24px rgba(0, 0, 255, 0.183);
+  }
+
+/* Media query for Tablet screen  */
+  @media (min-width: 25rem) and (max-width: 40rem) {
+    .formcontainer {
+      padding: 24px;
+    }
+
+    .submitdes {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fne {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .eml  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .msg  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+
+
+  }
+  /* Media query for Web screen  */
+  @media (min-width: 40rem) and (max-width: 50rem) {
+
+    .submitdes {
+        padding: 8px;
+        margin: 8px;
+    }
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fne {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .eml  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .msg  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formcontainer {
+        padding: 24px;
+        margin: auto;
+      }
+  }
+  
+  /* Media query for width more than 50rem  */
+  @media (min-width: 50rem) {
+    .submitdes {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .formstyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "F E"
+            "M M"
+            "B B";
+    }
+
+    .fne {
+        grid-area: F;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .eml  {
+        grid-area: E;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .msg  {
+        grid-area: M;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #submit-button {
+        grid-area: B;
+        padding: 8px;
+        margin: 8px;
+    }
+  }
