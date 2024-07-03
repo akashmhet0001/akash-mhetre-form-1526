@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Assignment</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="formconatiner" class="wrapper">
+    <form class="contactform">
+      <fieldset>
+        <!-- Form header -->
+        <legend>Form Assignment</legend>
+        <div class="formstyle">
+          <!-- Full Name -->
+          <div class="fne">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname">
+        </div>
+          <!-- Email -->
+          <div class="eml">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+          <!-- Message -->
+          <div class="msg">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <!-- Submit btn -->
+        <div class="submitdes">
+          <input type="submit" id="submit-button" value="Submit">
+        </div>
+    </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="./js/index.js"></script> 
+</body>
+</html>
